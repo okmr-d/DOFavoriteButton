@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F7C3E651B4D83E700A31096 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C3E601B4D83E700A31096 /* DOFavoriteButton.swift */; };
+		4F7C3E661B4D83E700A31096 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C3E611B4D83E700A31096 /* heart.png */; };
+		4F7C3E671B4D83E700A31096 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C3E621B4D83E700A31096 /* like.png */; };
+		4F7C3E681B4D83E700A31096 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C3E631B4D83E700A31096 /* star.png */; };
+		4F7C3E6B1B4D865B00A31096 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F7C3E6A1B4D865B00A31096 /* smile.png */; };
+		4FBAA7031B4D807F00C8657F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAA7021B4D807F00C8657F /* AppDelegate.swift */; };
+		4FBAA7051B4D807F00C8657F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAA7041B4D807F00C8657F /* ViewController.swift */; };
+		4FBAA7081B4D807F00C8657F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7061B4D807F00C8657F /* Main.storyboard */; };
+		4FBAA70A1B4D807F00C8657F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7091B4D807F00C8657F /* Images.xcassets */; };
+		4FBAA70D1B4D807F00C8657F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */; };
+		4FBAA7191B4D807F00C8657F /* DOFavoriteButton_DEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAA7181B4D807F00C8657F /* DOFavoriteButton_DEMOTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FBAA7131B4D807F00C8657F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FBAA6F51B4D807F00C8657F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FBAA6FC1B4D807F00C8657F;
+			remoteInfo = "DOFavoriteButton-DEMO";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F7C3E601B4D83E700A31096 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DOFavoriteButton.swift; path = DOFavoriteButton/DOFavoriteButton.swift; sourceTree = "<group>"; };
+		4F7C3E611B4D83E700A31096 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = DOFavoriteButton/heart.png; sourceTree = "<group>"; };
+		4F7C3E621B4D83E700A31096 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = like.png; path = DOFavoriteButton/like.png; sourceTree = "<group>"; };
+		4F7C3E631B4D83E700A31096 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = DOFavoriteButton/star.png; sourceTree = "<group>"; };
+		4F7C3E6A1B4D865B00A31096 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile.png; path = DOFavoriteButton/smile.png; sourceTree = "<group>"; };
+		4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOFavoriteButton-DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBAA7011B4D807F00C8657F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBAA7021B4D807F00C8657F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FBAA7041B4D807F00C8657F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FBAA7071B4D807F00C8657F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FBAA7091B4D807F00C8657F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4FBAA70C1B4D807F00C8657F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4FBAA7121B4D807F00C8657F /* DOFavoriteButton-DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOFavoriteButton-DEMOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBAA7171B4D807F00C8657F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBAA7181B4D807F00C8657F /* DOFavoriteButton_DEMOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOFavoriteButton_DEMOTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FBAA6FA1B4D807F00C8657F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FBAA70F1B4D807F00C8657F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FBAA6F41B4D807F00C8657F = {
+			isa = PBXGroup;
+			children = (
+				4FBAA6FF1B4D807F00C8657F /* DOFavoriteButton-DEMO */,
+				4FBAA7151B4D807F00C8657F /* DOFavoriteButton-DEMOTests */,
+				4FBAA6FE1B4D807F00C8657F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FBAA6FE1B4D807F00C8657F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */,
+				4FBAA7121B4D807F00C8657F /* DOFavoriteButton-DEMOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FBAA6FF1B4D807F00C8657F /* DOFavoriteButton-DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAA7021B4D807F00C8657F /* AppDelegate.swift */,
+				4FBAA7041B4D807F00C8657F /* ViewController.swift */,
+				4FBAA7061B4D807F00C8657F /* Main.storyboard */,
+				4FBAA7091B4D807F00C8657F /* Images.xcassets */,
+				4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */,
+				4FBAA7221B4D811600C8657F /* DOFavoriteButton */,
+				4FBAA7001B4D807F00C8657F /* Supporting Files */,
+			);
+			path = "DOFavoriteButton-DEMO";
+			sourceTree = "<group>";
+		};
+		4FBAA7001B4D807F00C8657F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAA7011B4D807F00C8657F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FBAA7151B4D807F00C8657F /* DOFavoriteButton-DEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAA7181B4D807F00C8657F /* DOFavoriteButton_DEMOTests.swift */,
+				4FBAA7161B4D807F00C8657F /* Supporting Files */,
+			);
+			path = "DOFavoriteButton-DEMOTests";
+			sourceTree = "<group>";
+		};
+		4FBAA7161B4D807F00C8657F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAA7171B4D807F00C8657F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FBAA7221B4D811600C8657F /* DOFavoriteButton */ = {
+			isa = PBXGroup;
+			children = (
+				4F7C3E601B4D83E700A31096 /* DOFavoriteButton.swift */,
+				4F7C3E631B4D83E700A31096 /* star.png */,
+				4F7C3E611B4D83E700A31096 /* heart.png */,
+				4F7C3E621B4D83E700A31096 /* like.png */,
+				4F7C3E6A1B4D865B00A31096 /* smile.png */,
+			);
+			name = DOFavoriteButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FBAA6FC1B4D807F00C8657F /* DOFavoriteButton-DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMO" */;
+			buildPhases = (
+				4FBAA6F91B4D807F00C8657F /* Sources */,
+				4FBAA6FA1B4D807F00C8657F /* Frameworks */,
+				4FBAA6FB1B4D807F00C8657F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DOFavoriteButton-DEMO";
+			productName = "DOFavoriteButton-DEMO";
+			productReference = 4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FBAA7111B4D807F00C8657F /* DOFavoriteButton-DEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FBAA71F1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMOTests" */;
+			buildPhases = (
+				4FBAA70E1B4D807F00C8657F /* Sources */,
+				4FBAA70F1B4D807F00C8657F /* Frameworks */,
+				4FBAA7101B4D807F00C8657F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FBAA7141B4D807F00C8657F /* PBXTargetDependency */,
+			);
+			name = "DOFavoriteButton-DEMOTests";
+			productName = "DOFavoriteButton-DEMOTests";
+			productReference = 4FBAA7121B4D807F00C8657F /* DOFavoriteButton-DEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FBAA6F51B4D807F00C8657F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Daiki Okumura";
+				TargetAttributes = {
+					4FBAA6FC1B4D807F00C8657F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					4FBAA7111B4D807F00C8657F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 4FBAA6FC1B4D807F00C8657F;
+					};
+				};
+			};
+			buildConfigurationList = 4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButton-DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FBAA6F41B4D807F00C8657F;
+			productRefGroup = 4FBAA6FE1B4D807F00C8657F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FBAA6FC1B4D807F00C8657F /* DOFavoriteButton-DEMO */,
+				4FBAA7111B4D807F00C8657F /* DOFavoriteButton-DEMOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FBAA6FB1B4D807F00C8657F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7C3E661B4D83E700A31096 /* heart.png in Resources */,
+				4F7C3E6B1B4D865B00A31096 /* smile.png in Resources */,
+				4F7C3E681B4D83E700A31096 /* star.png in Resources */,
+				4FBAA7081B4D807F00C8657F /* Main.storyboard in Resources */,
+				4F7C3E671B4D83E700A31096 /* like.png in Resources */,
+				4FBAA70D1B4D807F00C8657F /* LaunchScreen.xib in Resources */,
+				4FBAA70A1B4D807F00C8657F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FBAA7101B4D807F00C8657F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FBAA6F91B4D807F00C8657F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7C3E651B4D83E700A31096 /* DOFavoriteButton.swift in Sources */,
+				4FBAA7051B4D807F00C8657F /* ViewController.swift in Sources */,
+				4FBAA7031B4D807F00C8657F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FBAA70E1B4D807F00C8657F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBAA7191B4D807F00C8657F /* DOFavoriteButton_DEMOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FBAA7141B4D807F00C8657F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FBAA6FC1B4D807F00C8657F /* DOFavoriteButton-DEMO */;
+			targetProxy = 4FBAA7131B4D807F00C8657F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FBAA7061B4D807F00C8657F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBAA7071B4D807F00C8657F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBAA70C1B4D807F00C8657F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FBAA71A1B4D807F00C8657F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FBAA71B1B4D807F00C8657F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FBAA71D1B4D807F00C8657F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FBAA71E1B4D807F00C8657F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4FBAA7201B4D807F00C8657F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DOFavoriteButton-DEMOTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOFavoriteButton-DEMO.app/DOFavoriteButton-DEMO";
+			};
+			name = Debug;
+		};
+		4FBAA7211B4D807F00C8657F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DOFavoriteButton-DEMOTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOFavoriteButton-DEMO.app/DOFavoriteButton-DEMO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButton-DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBAA71A1B4D807F00C8657F /* Debug */,
+				4FBAA71B1B4D807F00C8657F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBAA71D1B4D807F00C8657F /* Debug */,
+				4FBAA71E1B4D807F00C8657F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FBAA71F1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBAA7201B4D807F00C8657F /* Debug */,
+				4FBAA7211B4D807F00C8657F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FBAA6F51B4D807F00C8657F /* Project object */;
+}
