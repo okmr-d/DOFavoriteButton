@@ -11,7 +11,7 @@ It could be just right for favorite buttons!
 #### CocoaPods
 Add the following line to your Podfile:
 ```
-pod 'DOAlertController'
+pod 'DOFavoriteButton'
 ```
 
 #### Manual
