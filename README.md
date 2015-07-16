@@ -6,6 +6,7 @@ It could be just right for favorite buttons!
 
 ## Requirements
 * iOS 7.0+
+* Swift 1.2
 
 ## Installation
 #### CocoaPods
@@ -22,6 +23,14 @@ Just drag DOFavoriteButton.swift to your project.
 ![Flat Icon Image](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/flatIconImage.png)
 
 #### 2. Create a button
+##### ・By using Storyboard or XIBs
+1. Add Button object and set Custom Class `DOFavoriteButton`  
+![via Storyboard](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/storyboard.png)
+
+2. Connect Outlet  
+![connect outlet](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/connect.png)
+
+##### ・By coding
 ```swift
 let button = DOFavoriteButton(
     frame: CGRectMake(0, 0, 44, 44), // frame of button(tappable area) (blue frame in the picture below)
