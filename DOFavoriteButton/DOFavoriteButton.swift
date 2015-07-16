@@ -11,18 +11,19 @@
 
 import UIKit
 
-class DOFavoriteButton: UIButton {
+@IBDesignable
+public class DOFavoriteButton: UIButton {
     
     private var circleShape: CAShapeLayer!
     private var circleMask: CAShapeLayer!
-    var circleColor: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
+    @IBInspectable public var circleColor: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
         didSet {
             circleShape.fillColor = circleColor.CGColor
         }
     }
     
     private var lines: [CAShapeLayer]! = []
-    var lineColor = UIColor(red: 250/255, green: 120/255, blue: 68/255, alpha: 1.0) {
+    @IBInspectable public var lineColor = UIColor(red: 250/255, green: 120/255, blue: 68/255, alpha: 1.0) {
         didSet {
             for i in 0 ..< 5 {
                 lines[i].strokeColor = lineColor.CGColor
@@ -30,15 +31,23 @@ class DOFavoriteButton: UIButton {
         }
     }
     
+    @IBInspectable public var image = UIImage(named: "star", inBundle: NSBundle(forClass: DOFavoriteButton.self), compatibleWithTraitCollection: nil) {
+        didSet {
+            let frame = self.frame
+            let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
+            createLayers(image: image, imageFrame: imageFrame)
+        }
+    }
+    
     private var imageShape: CAShapeLayer!
-    var imageColorOn = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
+    @IBInspectable public var imageColorOn = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
         didSet {
             if (selected) {
                 imageShape.fillColor = imageColorOn.CGColor
             }
         }
     }
-    var imageColorOff = UIColor(red: 136/255, green: 153/255, blue: 166/255, alpha: 1.0) {
+    @IBInspectable public var imageColorOff = UIColor(red: 136/255, green: 153/255, blue: 166/255, alpha: 1.0) {
         didSet {
             if (!selected) {
                 imageShape.fillColor = imageColorOff.CGColor
@@ -53,7 +62,7 @@ class DOFavoriteButton: UIButton {
     private let lineOpacity = CAKeyframeAnimation(keyPath: "opacity")
     private let imageTransform = CAKeyframeAnimation(keyPath: "transform")
     
-    var duration: Double = 1.0 {
+    @IBInspectable public var duration: Double = 1.0 {
         didSet {
             circleTransform.duration = 0.333 * duration // 0.0333 * 10
             circleMaskTransform.duration = 0.333 * duration // 0.0333 * 10
@@ -64,7 +73,7 @@ class DOFavoriteButton: UIButton {
         }
     }
     
-    override var selected : Bool {
+    @IBInspectable override public var selected : Bool {
         didSet {
             if (selected != oldValue) {
                 if selected {
@@ -76,31 +85,38 @@ class DOFavoriteButton: UIButton {
         }
     }
     
-    init() {
-        super.init(frame: CGRectZero)
-        createLayers(image: UIImage(named: "star"), imageFrame: frame)
+    public convenience init() {
+        self.init(frame: CGRectZero)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        createLayers(image: UIImage(named: "star"), imageFrame: CGRectMake(0, 0, frame.width, frame.height))
+    public override convenience init(frame: CGRect) {
+        let image = UIImage(named: "star", inBundle: NSBundle(forClass: self.dynamicType), compatibleWithTraitCollection: nil)
+        self.init(frame: frame, image: image)
     }
     
-    init(frame: CGRect, image: UIImage!, imageFrame: CGRect) {
+    public convenience init(frame: CGRect, image: UIImage!) {
+        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
+        self.init(frame: frame, image: image, imageFrame: imageFrame)
+    }
+    
+    public init(frame: CGRect, image: UIImage!, imageFrame: CGRect) {
         super.init(frame: frame)
+        self.image = image
         createLayers(image: image, imageFrame: imageFrame)
+        addTargets()
     }
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    public required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        addTargets()
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         //layoutLayers()
     }
     
-    func createLayers(#image: UIImage!, imageFrame: CGRect) {
+    private func createLayers(#image: UIImage!, imageFrame: CGRect) {
         
         let imgCenterPoint = CGPointMake(imageFrame.origin.x + imageFrame.width / 2, imageFrame.origin.y + imageFrame.height / 2)
         let lineFrame = CGRectMake(imageFrame.origin.x - imageFrame.width / 4, imageFrame.origin.y - imageFrame.height / 4 , imageFrame.width * 1.5, imageFrame.height * 1.5)
@@ -327,7 +343,9 @@ class DOFavoriteButton: UIButton {
             0.967,  // 29/30
             1.0     // 30/30
         ]
-        
+    }
+    
+    private func addTargets() {
         //===============
         // add target
         //===============
@@ -354,7 +372,7 @@ class DOFavoriteButton: UIButton {
         self.layer.opacity = 1.0
     }
     
-    func select() {
+    public func select() {
         selected = true
         imageShape.fillColor = imageColorOn.CGColor
         
@@ -373,7 +391,7 @@ class DOFavoriteButton: UIButton {
         CATransaction.commit()
     }
     
-    func deselect() {
+    public func deselect() {
         selected = false
         imageShape.fillColor = imageColorOff.CGColor
         
