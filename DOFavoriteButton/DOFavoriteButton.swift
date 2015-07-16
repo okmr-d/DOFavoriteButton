@@ -14,6 +14,30 @@ import UIKit
 @IBDesignable
 public class DOFavoriteButton: UIButton {
     
+    @IBInspectable public var image: UIImage! = UIImage(named: "star", inBundle: NSBundle(forClass: DOFavoriteButton.self), compatibleWithTraitCollection: nil) {
+        didSet {
+            let frame = self.frame
+            let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
+            createLayers(image: image, imageFrame: imageFrame)
+        }
+    }
+    
+    private var imageShape: CAShapeLayer!
+    @IBInspectable public var imageColorOn: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
+        didSet {
+            if (selected) {
+                imageShape.fillColor = imageColorOn.CGColor
+            }
+        }
+    }
+    @IBInspectable public var imageColorOff: UIColor! = UIColor(red: 136/255, green: 153/255, blue: 166/255, alpha: 1.0) {
+        didSet {
+            if (!selected) {
+                imageShape.fillColor = imageColorOff.CGColor
+            }
+        }
+    }
+    
     private var circleShape: CAShapeLayer!
     private var circleMask: CAShapeLayer!
     @IBInspectable public var circleColor: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
@@ -23,34 +47,10 @@ public class DOFavoriteButton: UIButton {
     }
     
     private var lines: [CAShapeLayer]! = []
-    @IBInspectable public var lineColor = UIColor(red: 250/255, green: 120/255, blue: 68/255, alpha: 1.0) {
+    @IBInspectable public var lineColor: UIColor! = UIColor(red: 250/255, green: 120/255, blue: 68/255, alpha: 1.0) {
         didSet {
             for i in 0 ..< 5 {
                 lines[i].strokeColor = lineColor.CGColor
-            }
-        }
-    }
-    
-    @IBInspectable public var image = UIImage(named: "star", inBundle: NSBundle(forClass: DOFavoriteButton.self), compatibleWithTraitCollection: nil) {
-        didSet {
-            let frame = self.frame
-            let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
-            createLayers(image: image, imageFrame: imageFrame)
-        }
-    }
-    
-    private var imageShape: CAShapeLayer!
-    @IBInspectable public var imageColorOn = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
-        didSet {
-            if (selected) {
-                imageShape.fillColor = imageColorOn.CGColor
-            }
-        }
-    }
-    @IBInspectable public var imageColorOff = UIColor(red: 136/255, green: 153/255, blue: 166/255, alpha: 1.0) {
-        didSet {
-            if (!selected) {
-                imageShape.fillColor = imageColorOff.CGColor
             }
         }
     }
