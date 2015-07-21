@@ -1,4 +1,7 @@
 # DOFavoriteButton
+[![Version](https://img.shields.io/cocoapods/v/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton)
+[![Platform](https://img.shields.io/cocoapods/p/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton)
+[![License](https://img.shields.io/cocoapods/l/DOFavoriteButton.svg?style=flat)](https://github.com/okmr-d/DOFavoriteButton/blob/master/LICENSE)
 
 Cute Animated Button written in Swift.
 It could be just right for favorite buttons!
@@ -23,23 +26,18 @@ Just drag DOFavoriteButton.swift to your project.
 ![Flat Icon Image](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/flatIconImage.png)
 
 #### 2. Create a button
-##### ・By using Storyboard or XIBs
+##### ・By coding
+```swift
+let button = DOFavoriteButton(frame: CGRectMake(0, 0, 44, 44), image: UIImage(named: "star.png"))
+self.view.addSubview(button)
+```
+
+##### ・By using Storyboard or XIB
 1. Add Button object and set Custom Class `DOFavoriteButton`  
 ![via Storyboard](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/storyboard.png)
 
 2. Connect Outlet  
 ![connect outlet](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/connect.png)
-
-##### ・By coding
-```swift
-let button = DOFavoriteButton(
-    frame: CGRectMake(0, 0, 44, 44), // frame of button(tappable area) (blue frame in the picture below)
-    image: UIImage(named: "star.png"),
-    imageFrame: CGRectMake(12, 12, 20, 20) // frame of icon image (red frame in the picture below)
-)
-self.view.addSubview(button)
-```
-![Frames](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/frames.png)
 
 #### 3. Add tapped function
 ```swift

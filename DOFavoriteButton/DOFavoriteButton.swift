@@ -14,15 +14,12 @@ import UIKit
 @IBDesignable
 public class DOFavoriteButton: UIButton {
     
+    private var imageShape: CAShapeLayer!
     @IBInspectable public var image: UIImage! {
         didSet {
-            let frame = self.frame
-            let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
-            createLayers(image: image, imageFrame: imageFrame)
+            imageShape.mask.contents = image.CGImage
         }
     }
-    
-    private var imageShape: CAShapeLayer!
     @IBInspectable public var imageColorOn: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
         didSet {
             if (selected) {
@@ -46,11 +43,11 @@ public class DOFavoriteButton: UIButton {
         }
     }
     
-    private var lines: [CAShapeLayer]! = []
+    private var lines: [CAShapeLayer]!
     @IBInspectable public var lineColor: UIColor! = UIColor(red: 250/255, green: 120/255, blue: 68/255, alpha: 1.0) {
         didSet {
-            for i in 0 ..< 5 {
-                lines[i].strokeColor = lineColor.CGColor
+            for line in lines {
+                line.strokeColor = lineColor.CGColor
             }
         }
     }
@@ -73,7 +70,7 @@ public class DOFavoriteButton: UIButton {
         }
     }
     
-    @IBInspectable override public var selected : Bool {
+    override public var selected : Bool {
         didSet {
             if (selected != oldValue) {
                 if selected {
@@ -93,30 +90,22 @@ public class DOFavoriteButton: UIButton {
         self.init(frame: frame, image: UIImage())
     }
     
-    public convenience init(frame: CGRect, image: UIImage!) {
-        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
-        self.init(frame: frame, image: image, imageFrame: imageFrame)
-    }
-    
-    public init(frame: CGRect, image: UIImage!, imageFrame: CGRect) {
+    public init(frame: CGRect, image: UIImage!) {
         super.init(frame: frame)
         self.image = image
-        createLayers(image: image, imageFrame: imageFrame)
+        createLayers(image: image)
         addTargets()
     }
     
     public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        createLayers(image: UIImage())
         addTargets()
     }
     
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        //layoutLayers()
-    }
-    
-    private func createLayers(#image: UIImage!, imageFrame: CGRect) {
+    private func createLayers(#image: UIImage!) {
         
+        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
         let imgCenterPoint = CGPointMake(imageFrame.origin.x + imageFrame.width / 2, imageFrame.origin.y + imageFrame.height / 2)
         let lineFrame = CGRectMake(imageFrame.origin.x - imageFrame.width / 4, imageFrame.origin.y - imageFrame.height / 4 , imageFrame.width * 1.5, imageFrame.height * 1.5)
         
@@ -144,6 +133,7 @@ public class DOFavoriteButton: UIButton {
         //===============
         // line layer
         //===============
+        lines = []
         for i in 0 ..< 5 {
             let line = CAShapeLayer()
             line.bounds = lineFrame
@@ -180,11 +170,10 @@ public class DOFavoriteButton: UIButton {
         imageShape.actions = ["fillColor": NSNull()]
         self.layer.addSublayer(imageShape)
         
-        let imageMask = CALayer()
-        imageMask.contents = image.CGImage
-        imageMask.bounds = imageFrame
-        imageMask.position = imgCenterPoint
-        imageShape.mask = imageMask
+        imageShape.mask = CALayer()
+        imageShape.mask.contents = image.CGImage
+        imageShape.mask.bounds = imageFrame
+        imageShape.mask.position = imgCenterPoint
         
         //==============================
         // circle transform animation
