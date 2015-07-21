@@ -90,8 +90,7 @@ public class DOFavoriteButton: UIButton {
     }
     
     public override convenience init(frame: CGRect) {
-        let image = UIImage(named: "star", inBundle: NSBundle(forClass: self.dynamicType), compatibleWithTraitCollection: nil)
-        self.init(frame: frame, image: image)
+        self.init(frame: frame, image: UIImage())
     }
     
     public convenience init(frame: CGRect, image: UIImage!) {
