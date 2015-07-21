@@ -17,7 +17,7 @@ public class DOFavoriteButton: UIButton {
     private var imageShape: CAShapeLayer!
     @IBInspectable public var image: UIImage! {
         didSet {
-            imageShape.mask.contents = image.CGImage
+            createLayers(image: image)
         }
     }
     @IBInspectable public var imageColorOn: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
@@ -104,6 +104,7 @@ public class DOFavoriteButton: UIButton {
     }
     
     private func createLayers(#image: UIImage!) {
+        self.layer.sublayers = nil
         
         let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
         let imgCenterPoint = CGPointMake(imageFrame.origin.x + imageFrame.width / 2, imageFrame.origin.y + imageFrame.height / 2)
