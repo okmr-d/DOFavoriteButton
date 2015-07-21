@@ -14,7 +14,7 @@ import UIKit
 @IBDesignable
 public class DOFavoriteButton: UIButton {
     
-    @IBInspectable public var image: UIImage! = UIImage(named: "star", inBundle: NSBundle(forClass: DOFavoriteButton.self), compatibleWithTraitCollection: nil) {
+    @IBInspectable public var image: UIImage! {
         didSet {
             let frame = self.frame
             let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
