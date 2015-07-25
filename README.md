@@ -1,4 +1,5 @@
 # DOFavoriteButton
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton)
 [![Platform](https://img.shields.io/cocoapods/p/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton)
 [![License](https://img.shields.io/cocoapods/l/DOFavoriteButton.svg?style=flat)](https://github.com/okmr-d/DOFavoriteButton/blob/master/LICENSE)
@@ -12,8 +13,14 @@ It could be just right for favorite buttons!
 * Swift 1.2
 
 ## Installation
+#### Carthage
+Add the following line to your `Cartfile`:
+```
+github "okmr-d/DOHamburgerButton"
+```
+
 #### CocoaPods
-Add the following line to your Podfile:
+Add the following line to your `Podfile`:
 ```
 pod 'DOFavoriteButton'
 ```
@@ -75,4 +82,3 @@ This software is released under the MIT License.
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/okmr-d/dofavoritebutton/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
