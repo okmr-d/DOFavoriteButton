@@ -79,6 +79,3 @@ There is a demo project added to this repository, so you can see how it works.
 
 ## License
 This software is released under the MIT License.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/okmr-d/dofavoritebutton/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
