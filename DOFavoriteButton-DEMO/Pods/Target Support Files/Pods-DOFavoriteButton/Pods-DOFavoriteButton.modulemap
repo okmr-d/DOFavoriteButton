@@ -1,6 +1,0 @@
-framework module DOFavoriteButton {
-  umbrella header "Pods-DOFavoriteButton-umbrella.h"
-
-  export *
-  module * { export * }
-}
