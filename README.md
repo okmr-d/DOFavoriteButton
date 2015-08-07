@@ -77,5 +77,8 @@ Result:
 ## DEMO
 There is a demo project added to this repository, so you can see how it works.
 
+## Credit/Inspiration
+DOFavoriteButton was inspired by [Twitter's iOS App](https://itunes.apple.com/us/app/twitter/id333903271).
+
 ## License
 This software is released under the MIT License.
