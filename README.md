@@ -16,7 +16,7 @@ It could be just right for favorite buttons!
 #### Carthage
 Add the following line to your `Cartfile`:
 ```
-github "okmr-d/DOHamburgerButton"
+github "okmr-d/DOFavoriteButton"
 ```
 
 #### CocoaPods
