@@ -106,9 +106,11 @@ public class DOFavoriteButton: UIButton {
     private func createLayers(#image: UIImage!) {
         self.layer.sublayers = nil
 
-        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
+        let imageFrame = CGRect(x: frame.size.width / 2 - 9, y: frame.size.height - 9, width: 18, height: 18)
         let imgCenterPoint = CGPointMake(CGRectGetMidX(imageFrame), CGRectGetMidY(imageFrame))
         let lineFrame = CGRectMake(imageFrame.origin.x - imageFrame.width / 4, imageFrame.origin.y - imageFrame.height / 4 , imageFrame.width * 1.5, imageFrame.height * 1.5)
+        
+//        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
 
         //===============
         // circle layer
