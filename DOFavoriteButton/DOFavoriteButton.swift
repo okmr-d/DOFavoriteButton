@@ -97,18 +97,20 @@ public class DOFavoriteButton: UIButton {
         addTargets()
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         createLayers(image: UIImage())
         addTargets()
     }
 
-    private func createLayers(#image: UIImage!) {
+    private func createLayers(image image: UIImage!) {
         self.layer.sublayers = nil
 
-        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
+        let imageFrame = CGRect(x: frame.size.width / 2 - 8, y: frame.size.height / 2 - 8, width: 16, height: 16)
         let imgCenterPoint = CGPointMake(CGRectGetMidX(imageFrame), CGRectGetMidY(imageFrame))
         let lineFrame = CGRectMake(imageFrame.origin.x - imageFrame.width / 4, imageFrame.origin.y - imageFrame.height / 4 , imageFrame.width * 1.5, imageFrame.height * 1.5)
+        
+//        let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
 
         //===============
         // circle layer
@@ -172,9 +174,9 @@ public class DOFavoriteButton: UIButton {
         self.layer.addSublayer(imageShape)
 
         imageShape.mask = CALayer()
-        imageShape.mask.contents = image.CGImage
-        imageShape.mask.bounds = imageFrame
-        imageShape.mask.position = imgCenterPoint
+        imageShape.mask!.contents = image.CGImage
+        imageShape.mask!.bounds = imageFrame
+        imageShape.mask!.position = imgCenterPoint
 
         //==============================
         // circle transform animation
