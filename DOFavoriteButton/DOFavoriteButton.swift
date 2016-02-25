@@ -106,7 +106,7 @@ public class DOFavoriteButton: UIButton {
     private func createLayers(image image: UIImage!) {
         self.layer.sublayers = nil
 
-        let imageFrame = CGRect(x: frame.size.width / 2 - 8, y: frame.size.height / 2 - 8, width: 16, height: 16)
+        let imageFrame = CGRect(x: frame.size.width / 2 - image.size.width / 2, y: frame.size.height / 2 - image.size.height / 2, width: image.size.width, height: image.size.height)
         let imgCenterPoint = CGPointMake(CGRectGetMidX(imageFrame), CGRectGetMidY(imageFrame))
         let lineFrame = CGRectMake(imageFrame.origin.x - imageFrame.width / 4, imageFrame.origin.y - imageFrame.height / 4 , imageFrame.width * 1.5, imageFrame.height * 1.5)
         
