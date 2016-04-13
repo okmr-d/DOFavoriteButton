@@ -364,7 +364,7 @@ public class DOFavoriteButton: UIButton {
     }
 
     public func select() {
-        select(true)
+        select(animate: true)
     }
     
     public func select(animate animate: Bool) {
