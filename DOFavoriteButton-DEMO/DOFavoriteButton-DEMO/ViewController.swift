@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         // star button
         let starButton = DOFavoriteButton(frame: CGRectMake(x, y, 44, 44), image: UIImage(named: "star"))
-        starButton.addTarget(self, action: Selector("tappedButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        starButton.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(starButton)
         x += width
         
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         heartButton.imageColorOn = UIColor(red: 254/255, green: 110/255, blue: 111/255, alpha: 1.0)
         heartButton.circleColor = UIColor(red: 254/255, green: 110/255, blue: 111/255, alpha: 1.0)
         heartButton.lineColor = UIColor(red: 226/255, green: 96/255, blue: 96/255, alpha: 1.0)
-        heartButton.addTarget(self, action: Selector("tappedButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        heartButton.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(heartButton)
         x += width
         
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         likeButton.imageColorOn = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0)
         likeButton.circleColor = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0)
         likeButton.lineColor = UIColor(red: 41/255, green: 128/255, blue: 185/255, alpha: 1.0)
-        likeButton.addTarget(self, action: Selector("tappedButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        likeButton.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(likeButton)
         x += width
         
@@ -49,10 +49,10 @@ class ViewController: UIViewController {
         smileButton.imageColorOn = UIColor(red: 45/255, green: 204/255, blue: 112/255, alpha: 1.0)
         smileButton.circleColor = UIColor(red: 45/255, green: 204/255, blue: 112/255, alpha: 1.0)
         smileButton.lineColor = UIColor(red: 45/255, green: 195/255, blue: 106/255, alpha: 1.0)
-        smileButton.addTarget(self, action: Selector("tappedButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        smileButton.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(smileButton)
         
-        self.heartButton.addTarget(self, action: Selector("tappedButton:"), forControlEvents: UIControlEvents.TouchUpInside)
+        self.heartButton.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
