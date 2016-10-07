@@ -82,6 +82,12 @@ open class DOFavoriteButton: UIButton {
         }
     }
 
+    open override var bounds: CGRect {
+        didSet {
+            createLayers(image: image)
+        }
+    }
+
     public convenience init() {
         self.init(frame: CGRect.zero)
     }
