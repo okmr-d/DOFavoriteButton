@@ -14,6 +14,8 @@
 		4FBAA7081B4D807F00C8657F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7061B4D807F00C8657F /* Main.storyboard */; };
 		4FBAA70A1B4D807F00C8657F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7091B4D807F00C8657F /* Images.xcassets */; };
 		4FBAA70D1B4D807F00C8657F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */; };
+		98811D731E38C3C3003F7B12 /* DOFavoriteButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */; };
+		98811D741E38C3C3003F7B12 /* DOFavoriteButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -27,6 +29,30 @@
 			script = "# $(SWIFT_EXEC)\n";
 		};
 /* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		98811D751E38C3C3003F7B12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FBAA6F51B4D807F00C8657F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F60711A1B6366ED0058F570;
+			remoteInfo = DOFavoriteButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98811D771E38C3C3003F7B12 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98811D741E38C3C3003F7B12 /* DOFavoriteButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DOFavoriteButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98811D731E38C3C3003F7B12 /* DOFavoriteButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +184,12 @@
 				4FBAA6F91B4D807F00C8657F /* Sources */,
 				4FBAA6FA1B4D807F00C8657F /* Frameworks */,
 				4FBAA6FB1B4D807F00C8657F /* Resources */,
+				98811D771E38C3C3003F7B12 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				98811D761E38C3C3003F7B12 /* PBXTargetDependency */,
 			);
 			name = "DOFavoriteButton-DEMO";
 			productName = "DOFavoriteButton-DEMO";
@@ -183,6 +212,7 @@
 					};
 					4FBAA6FC1B4D807F00C8657F = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -245,6 +275,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		98811D761E38C3C3003F7B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F60711A1B6366ED0058F570 /* DOFavoriteButton */;
+			targetProxy = 98811D751E38C3C3003F7B12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4FBAA7061B4D807F00C8657F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -286,6 +324,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -307,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -399,24 +439,28 @@
 		4FBAA71D1B4D807F00C8657F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		4FBAA71E1B4D807F00C8657F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
