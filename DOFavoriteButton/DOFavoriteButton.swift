@@ -17,7 +17,7 @@ open class DOFavoriteButton: UIButton {
     fileprivate var imageShape: CAShapeLayer!
     @IBInspectable open var image: UIImage! {
         didSet {
-            createLayers(image: image)
+            createSelectedSampleAnimationLayers(image: image)
         }
     }
     @IBInspectable open var imageColorOn: UIColor! = UIColor(red: 255/255, green: 172/255, blue: 51/255, alpha: 1.0) {
@@ -93,17 +93,17 @@ open class DOFavoriteButton: UIButton {
     public init(frame: CGRect, image: UIImage!) {
         super.init(frame: frame)
         self.image = image
-        createLayers(image: image)
+        createSelectedSampleAnimationLayers(image: image)
         addTargets()
     }
 
     public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        createLayers(image: UIImage())
+        createSelectedSampleAnimationLayers(image: UIImage())
         addTargets()
     }
 
-    fileprivate func createLayers(image: UIImage!) {
+    fileprivate func createSelectedSampleAnimationLayers(image: UIImage!) {
         self.layer.sublayers = nil
 
         let imageFrame = CGRect(x: frame.size.width / 2 - frame.size.width / 4, y: frame.size.height / 2 - frame.size.height / 4, width: frame.size.width / 2, height: frame.size.height / 2)
@@ -124,7 +124,7 @@ open class DOFavoriteButton: UIButton {
         circleMask = CAShapeLayer()
         circleMask.bounds = imageFrame
         circleMask.position = imgCenterPoint
-        circleMask.fillRule = kCAFillRuleEvenOdd
+        circleMask.fillRule = CAShapeLayerFillRule.evenOdd
         circleShape.mask = circleMask
 
         let maskPath = UIBezierPath(rect: imageFrame)
@@ -150,8 +150,8 @@ open class DOFavoriteButton: UIButton {
                 path.addLine(to: CGPoint(x: lineFrame.origin.x + lineFrame.width / 2, y: lineFrame.origin.y))
                 return path
                 }()
-            line.lineCap = kCALineCapRound
-            line.lineJoin = kCALineJoinRound
+            line.lineCap = CAShapeLayerLineCap.round
+            line.lineJoin = CAShapeLayerLineJoin.round
             line.strokeStart = 0.0
             line.strokeEnd = 0.0
             line.opacity = 0.0
@@ -338,11 +338,11 @@ open class DOFavoriteButton: UIButton {
         //===============
         // add target
         //===============
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDown(_:)), for: UIControlEvents.touchDown)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchUpInside(_:)), for: UIControlEvents.touchUpInside)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragExit(_:)), for: UIControlEvents.touchDragExit)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragEnter(_:)), for: UIControlEvents.touchDragEnter)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchCancel(_:)), for: UIControlEvents.touchCancel)
+        self.addTarget(self, action: #selector(DOFavoriteButton.touchDown(_:)), for: UIControl.Event.touchDown)
+        self.addTarget(self, action: #selector(DOFavoriteButton.touchUpInside(_:)), for: UIControl.Event.touchUpInside)
+        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragExit(_:)), for: UIControl.Event.touchDragExit)
+        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragEnter(_:)), for: UIControl.Event.touchDragEnter)
+        self.addTarget(self, action: #selector(DOFavoriteButton.touchCancel(_:)), for: UIControl.Event.touchCancel)
     }
 
     @objc func touchDown(_ sender: DOFavoriteButton) {
@@ -361,6 +361,13 @@ open class DOFavoriteButton: UIButton {
         self.layer.opacity = 1.0
     }
 
+    // MARK: - Open Function
+    
+    /**
+     * fileprivateの「createLayers」メソッドで実行したアクションを実行する
+     * TODO: 自分でCoreAnimationを追加できるような形でプロトコル化をしてみる
+     */
+    
     open func select() {
         isSelected = true
         imageShape.fillColor = imageColorOn.cgColor
