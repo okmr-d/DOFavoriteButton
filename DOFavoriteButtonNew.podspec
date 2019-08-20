@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://ghostlordstar.github.io"
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/ghostlordstar/DOFavoriteButton.git", :tag => s.version.to_s }
-  s.source_files = "DOFavoriteButton/*.swift"
-  s.resources    = "DOFavoriteButton/*.png"
+  s.source_files = "DOFavoriteButtonNew/*.swift"
+  s.resources    = "DOFavoriteButtonNew/*.png"
   s.framework    = "UIKit"
   s.requires_arc = true
 end
