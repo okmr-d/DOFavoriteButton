@@ -51,18 +51,18 @@ self.view.addSubview(button)
 
 #### 3. Add tapped function
 ```swift
-button.addTarget(self, action: Selector("tapped:"), forControlEvents: .TouchUpInside)
+button.addTarget(self, action: #selector(tapped(sender:)), for: UIControl.Event.touchUpInside)
 ```
 ```swift
-func tapped(sender: DOFavoriteButtonNew) {
-    if sender.isSelected {
-        // deselect
-        sender.deselect()
-    } else {
-        // select with animation
-        sender.select()
+@objc func tapped(sender: DOFavoriteButtonNew) {
+        if sender.isSelected {
+            // deselect
+            sender.deselect()
+        } else {
+            // select with animation
+            sender.select()
+        }
     }
-}
 ```
 
 ## Customize
