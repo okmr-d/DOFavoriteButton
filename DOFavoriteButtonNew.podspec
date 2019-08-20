@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "DOFavoriteButton-new"
-  s.version      = "0.0.5"
+  s.name         = "DOFavoriteButtonNew"
+  s.version      = "0.0.6"
   s.swift_versions = "5.0"
   s.summary      = "Cute Animated Button written in Swift. It could be just right for favorite buttons!"
   s.homepage     = "https://github.com/ghostlordstar/DOFavoriteButton.git"

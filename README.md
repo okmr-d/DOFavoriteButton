@@ -1,8 +1,8 @@
-# DOFavoriteButton
+# DOFavoriteButtonNew
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Version](https://img.shields.io/cocoapods/v/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton-new)
-[![Platform](https://img.shields.io/cocoapods/p/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton-new)
-[![License](https://img.shields.io/cocoapods/l/DOFavoriteButton.svg?style=flat)](https://github.com/ghostlordstar/DOFavoriteButton/blob/master/LICENSE)
+[![Version](https://img.shields.io/cocoapods/v/DOFavoriteButtonNew.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButtonNew)
+[![Platform](https://img.shields.io/cocoapods/p/DOFavoriteButtonNew.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButtonNew)
+[![License](https://img.shields.io/cocoapods/l/DOFavoriteButtonNew.svg?style=flat)](https://github.com/ghostlordstar/DOFavoriteButton/blob/master/LICENSE)
 
 Cute Animated Button written in Swift.
 It could be just right for favorite buttons!
@@ -16,20 +16,20 @@ DOFavoriteButton-new is based on the [DOFavoriteButton](https://github.com/okmr-
 * Swift 5.0
 
 ## Installation
-<!-- #### Carthage
+#### Carthage
 Add the following line to your `Cartfile`:
 ```
-github "okmr-d/DOFavoriteButton"
-``` -->
+github "ghostlordstar/DOFavoriteButtonNew"
+```
 
 #### CocoaPods
 Add the following line to your `Podfile`:
 ```
-pod 'DOFavoriteButton-new'
+pod 'DOFavoriteButtonNew'
 ```
 
 #### Manual
-Just drag DOFavoriteButton.swift to your project.
+Just drag DOFavoriteButtonNew.swift to your project.
 
 ## How to use
 #### 1. Add a flat icon image
@@ -38,12 +38,12 @@ Just drag DOFavoriteButton.swift to your project.
 #### 2. Create a button
 ##### ・By coding
 ```swift
-let button = DOFavoriteButton(frame: CGRectMake(0, 0, 44, 44), image: UIImage(named: "star.png"))
+let button = DOFavoriteButtonNew(frame: CGRect(x: 100, y:100, width: 44, height: 44), image: UIImage(named: "star.png"))
 self.view.addSubview(button)
 ```
 
 ##### ・By using Storyboard or XIB
-1. Add Button object and set Custom Class `DOFavoriteButton`  
+1. Add Button object and set Custom Class `DOFavoriteButtonNew`  
 ![via Storyboard](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOFavoriteButton/storyboard.png)
 
 2. Connect Outlet  
@@ -54,8 +54,8 @@ self.view.addSubview(button)
 button.addTarget(self, action: Selector("tapped:"), forControlEvents: .TouchUpInside)
 ```
 ```swift
-func tapped(sender: DOFavoriteButton) {
-    if sender.selected {
+func tapped(sender: DOFavoriteButtonNew) {
+    if sender.isSelected {
         // deselect
         sender.deselect()
     } else {
@@ -81,7 +81,7 @@ Result:
 There is a demo project added to this repository, so you can see how it works.
 
 ## Credit/Inspiration
-DOFavoriteButton was inspired by [Twitter's iOS App](https://itunes.apple.com/us/app/twitter/id333903271).
+DOFavoriteButtonNew was inspired by [Twitter's iOS App](https://itunes.apple.com/us/app/twitter/id333903271).
 
 ## License
 This software is released under the MIT License.

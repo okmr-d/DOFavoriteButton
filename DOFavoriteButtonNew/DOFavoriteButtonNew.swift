@@ -1,6 +1,6 @@
 //
-//  DOFavoriteButton.swift
-//  DOFavoriteButton
+//  DOFavoriteButtonNew.swift
+//  DOFavoriteButtonNew
 //
 //  Created by Daiki Okumura on 2015/07/09.
 //  Copyright (c) 2015 Daiki Okumura. All rights reserved.
@@ -12,7 +12,7 @@
 import UIKit
 
 @IBDesignable
-open class DOFavoriteButton: UIButton {
+open class DOFavoriteButtonNew: UIButton {
 
     fileprivate var imageShape: CAShapeLayer!
     @IBInspectable open var image: UIImage! {
@@ -338,26 +338,26 @@ open class DOFavoriteButton: UIButton {
         //===============
         // add target
         //===============
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDown(_:)), for: .touchDown)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchUpInside(_:)), for: .touchUpInside)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragExit(_:)), for: .touchDragExit)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchDragEnter(_:)), for: .touchDragEnter)
-        self.addTarget(self, action: #selector(DOFavoriteButton.touchCancel(_:)), for: .touchCancel)
+        self.addTarget(self, action: #selector(DOFavoriteButtonNew.touchDown(_:)), for: .touchDown)
+        self.addTarget(self, action: #selector(DOFavoriteButtonNew.touchUpInside(_:)), for: .touchUpInside)
+        self.addTarget(self, action: #selector(DOFavoriteButtonNew.touchDragExit(_:)), for: .touchDragExit)
+        self.addTarget(self, action: #selector(DOFavoriteButtonNew.touchDragEnter(_:)), for: .touchDragEnter)
+        self.addTarget(self, action: #selector(DOFavoriteButtonNew.touchCancel(_:)), for: .touchCancel)
     }
 
-    @objc func touchDown(_ sender: DOFavoriteButton) {
+    @objc func touchDown(_ sender: DOFavoriteButtonNew) {
         self.layer.opacity = 0.4
     }
-    @objc func touchUpInside(_ sender: DOFavoriteButton) {
+    @objc func touchUpInside(_ sender: DOFavoriteButtonNew) {
         self.layer.opacity = 1.0
     }
-    @objc func touchDragExit(_ sender: DOFavoriteButton) {
+    @objc func touchDragExit(_ sender: DOFavoriteButtonNew) {
         self.layer.opacity = 1.0
     }
-    @objc func touchDragEnter(_ sender: DOFavoriteButton) {
+    @objc func touchDragEnter(_ sender: DOFavoriteButtonNew) {
         self.layer.opacity = 0.4
     }
-    @objc func touchCancel(_ sender: DOFavoriteButton) {
+    @objc func touchCancel(_ sender: DOFavoriteButtonNew) {
         self.layer.opacity = 1.0
     }
 

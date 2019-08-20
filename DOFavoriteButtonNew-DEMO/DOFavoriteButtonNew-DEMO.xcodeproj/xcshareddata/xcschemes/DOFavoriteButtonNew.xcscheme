@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "1030"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F60711A1B6366ED0058F570"
-               BuildableName = "DOFavoriteButton.framework"
-               BlueprintName = "DOFavoriteButton"
-               ReferencedContainer = "container:DOFavoriteButton-DEMO.xcodeproj">
+               BuildableName = "DOFavoriteButtonNew.framework"
+               BlueprintName = "DOFavoriteButtonNew"
+               ReferencedContainer = "container:DOFavoriteButtonNew-DEMO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F60711A1B6366ED0058F570"
-            BuildableName = "DOFavoriteButton.framework"
-            BlueprintName = "DOFavoriteButton"
-            ReferencedContainer = "container:DOFavoriteButton-DEMO.xcodeproj">
+            BuildableName = "DOFavoriteButtonNew.framework"
+            BlueprintName = "DOFavoriteButtonNew"
+            ReferencedContainer = "container:DOFavoriteButtonNew-DEMO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F60711A1B6366ED0058F570"
-            BuildableName = "DOFavoriteButton.framework"
-            BlueprintName = "DOFavoriteButton"
-            ReferencedContainer = "container:DOFavoriteButton-DEMO.xcodeproj">
+            BuildableName = "DOFavoriteButtonNew.framework"
+            BlueprintName = "DOFavoriteButtonNew"
+            ReferencedContainer = "container:DOFavoriteButtonNew-DEMO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

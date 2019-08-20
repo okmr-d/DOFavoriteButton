@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F6071201B6366ED0058F570 /* DOFavoriteButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F60711F1B6366ED0058F570 /* DOFavoriteButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F60713C1B6367B00058F570 /* DOFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F60713B1B6367B00058F570 /* DOFavoriteButton.swift */; };
+		0482A6B0230C1C5B00E84985 /* DOFavoriteButtonNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482A6AF230C1C5B00E84985 /* DOFavoriteButtonNew.swift */; };
+		4F6071201B6366ED0058F570 /* DOFavoriteButtonNew.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F60711F1B6366ED0058F570 /* DOFavoriteButtonNew.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBAA7031B4D807F00C8657F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAA7021B4D807F00C8657F /* AppDelegate.swift */; };
 		4FBAA7051B4D807F00C8657F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAA7041B4D807F00C8657F /* ViewController.swift */; };
 		4FBAA7081B4D807F00C8657F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7061B4D807F00C8657F /* Main.storyboard */; };
 		4FBAA70A1B4D807F00C8657F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7091B4D807F00C8657F /* Images.xcassets */; };
 		4FBAA70D1B4D807F00C8657F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */; };
-		74018BBB1D86F8CB00B1EC84 /* DOFavoriteButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */; };
-		74018BBC1D86F8CB00B1EC84 /* DOFavoriteButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74018BBB1D86F8CB00B1EC84 /* DOFavoriteButtonNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButtonNew.framework */; };
+		74018BBC1D86F8CB00B1EC84 /* DOFavoriteButtonNew.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButtonNew.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74018BBC1D86F8CB00B1EC84 /* DOFavoriteButton.framework in Embed Frameworks */,
+				74018BBC1D86F8CB00B1EC84 /* DOFavoriteButtonNew.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,11 +55,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DOFavoriteButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0482A6AF230C1C5B00E84985 /* DOFavoriteButtonNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DOFavoriteButtonNew.swift; path = ../../DOFavoriteButtonNew/DOFavoriteButtonNew.swift; sourceTree = "<group>"; };
+		4F60711B1B6366ED0058F570 /* DOFavoriteButtonNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DOFavoriteButtonNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F60711E1B6366ED0058F570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F60711F1B6366ED0058F570 /* DOFavoriteButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFavoriteButton.h; sourceTree = "<group>"; };
-		4F60713B1B6367B00058F570 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DOFavoriteButton.swift; path = ../../DOFavoriteButton/DOFavoriteButton.swift; sourceTree = "<group>"; };
-		4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOFavoriteButton-DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F60711F1B6366ED0058F570 /* DOFavoriteButtonNew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFavoriteButtonNew.h; sourceTree = "<group>"; };
+		4FBAA6FD1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOFavoriteButtonNew-DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBAA7011B4D807F00C8657F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FBAA7021B4D807F00C8657F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FBAA7041B4D807F00C8657F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,21 +80,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74018BBB1D86F8CB00B1EC84 /* DOFavoriteButton.framework in Frameworks */,
+				74018BBB1D86F8CB00B1EC84 /* DOFavoriteButtonNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F60711C1B6366ED0058F570 /* DOFavoriteButton */ = {
+		4F60711C1B6366ED0058F570 /* DOFavoriteButtonNew */ = {
 			isa = PBXGroup;
 			children = (
-				4F60713B1B6367B00058F570 /* DOFavoriteButton.swift */,
-				4F60711F1B6366ED0058F570 /* DOFavoriteButton.h */,
+				0482A6AF230C1C5B00E84985 /* DOFavoriteButtonNew.swift */,
+				4F60711F1B6366ED0058F570 /* DOFavoriteButtonNew.h */,
 				4F60711D1B6366ED0058F570 /* Supporting Files */,
 			);
-			path = DOFavoriteButton;
+			path = DOFavoriteButtonNew;
 			sourceTree = "<group>";
 		};
 		4F60711D1B6366ED0058F570 /* Supporting Files */ = {
@@ -108,8 +108,8 @@
 		4FBAA6F41B4D807F00C8657F = {
 			isa = PBXGroup;
 			children = (
-				4FBAA6FF1B4D807F00C8657F /* DOFavoriteButton-DEMO */,
-				4F60711C1B6366ED0058F570 /* DOFavoriteButton */,
+				4FBAA6FF1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO */,
+				4F60711C1B6366ED0058F570 /* DOFavoriteButtonNew */,
 				4FBAA6FE1B4D807F00C8657F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,13 +117,13 @@
 		4FBAA6FE1B4D807F00C8657F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */,
-				4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */,
+				4FBAA6FD1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO.app */,
+				4F60711B1B6366ED0058F570 /* DOFavoriteButtonNew.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4FBAA6FF1B4D807F00C8657F /* DOFavoriteButton-DEMO */ = {
+		4FBAA6FF1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO */ = {
 			isa = PBXGroup;
 			children = (
 				4FBAA7021B4D807F00C8657F /* AppDelegate.swift */,
@@ -133,7 +133,7 @@
 				4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */,
 				4FBAA7001B4D807F00C8657F /* Supporting Files */,
 			);
-			path = "DOFavoriteButton-DEMO";
+			path = "DOFavoriteButtonNew-DEMO";
 			sourceTree = "<group>";
 		};
 		4FBAA7001B4D807F00C8657F /* Supporting Files */ = {
@@ -151,16 +151,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6071201B6366ED0058F570 /* DOFavoriteButton.h in Headers */,
+				4F6071201B6366ED0058F570 /* DOFavoriteButtonNew.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4F60711A1B6366ED0058F570 /* DOFavoriteButton */ = {
+		4F60711A1B6366ED0058F570 /* DOFavoriteButtonNew */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F6071341B6366ED0058F570 /* Build configuration list for PBXNativeTarget "DOFavoriteButton" */;
+			buildConfigurationList = 4F6071341B6366ED0058F570 /* Build configuration list for PBXNativeTarget "DOFavoriteButtonNew" */;
 			buildPhases = (
 				4F6071161B6366ED0058F570 /* Sources */,
 				4F6071171B6366ED0058F570 /* Frameworks */,
@@ -172,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = DOFavoriteButton;
+			name = DOFavoriteButtonNew;
 			productName = DOFavoriteButton;
-			productReference = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */;
+			productReference = 4F60711B1B6366ED0058F570 /* DOFavoriteButtonNew.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4FBAA6FC1B4D807F00C8657F /* DOFavoriteButton-DEMO */ = {
+		4FBAA6FC1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMO" */;
+			buildConfigurationList = 4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButtonNew-DEMO" */;
 			buildPhases = (
 				4FBAA6F91B4D807F00C8657F /* Sources */,
 				4FBAA6FA1B4D807F00C8657F /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				74018BBE1D86F8CB00B1EC84 /* PBXTargetDependency */,
 			);
-			name = "DOFavoriteButton-DEMO";
+			name = "DOFavoriteButtonNew-DEMO";
 			productName = "DOFavoriteButton-DEMO";
-			productReference = 4FBAA6FD1B4D807F00C8657F /* DOFavoriteButton-DEMO.app */;
+			productReference = 4FBAA6FD1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,14 +209,14 @@
 				TargetAttributes = {
 					4F60711A1B6366ED0058F570 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1030;
 					};
 					4FBAA6FC1B4D807F00C8657F = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = 4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButton-DEMO" */;
+			buildConfigurationList = 4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButtonNew-DEMO" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -230,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FBAA6FC1B4D807F00C8657F /* DOFavoriteButton-DEMO */,
-				4F60711A1B6366ED0058F570 /* DOFavoriteButton */,
+				4FBAA6FC1B4D807F00C8657F /* DOFavoriteButtonNew-DEMO */,
+				4F60711A1B6366ED0058F570 /* DOFavoriteButtonNew */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F60713C1B6367B00058F570 /* DOFavoriteButton.swift in Sources */,
+				0482A6B0230C1C5B00E84985 /* DOFavoriteButtonNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 /* Begin PBXTargetDependency section */
 		74018BBE1D86F8CB00B1EC84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4F60711A1B6366ED0058F570 /* DOFavoriteButton */;
+			target = 4F60711A1B6366ED0058F570 /* DOFavoriteButtonNew */;
 			targetProxy = 74018BBD1D86F8CB00B1EC84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -318,7 +318,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DOFavoriteButton/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DOFavoriteButtonNew/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -342,7 +342,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DOFavoriteButton/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DOFavoriteButtonNew/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -449,7 +449,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DOFavoriteButtonNew-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
@@ -463,7 +463,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "DOFavoriteButton-DEMO/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DOFavoriteButtonNew-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
@@ -475,7 +475,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F6071341B6366ED0058F570 /* Build configuration list for PBXNativeTarget "DOFavoriteButton" */ = {
+		4F6071341B6366ED0058F570 /* Build configuration list for PBXNativeTarget "DOFavoriteButtonNew" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F6071351B6366ED0058F570 /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButton-DEMO" */ = {
+		4FBAA6F81B4D807F00C8657F /* Build configuration list for PBXProject "DOFavoriteButtonNew-DEMO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FBAA71A1B4D807F00C8657F /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButton-DEMO" */ = {
+		4FBAA71C1B4D807F00C8657F /* Build configuration list for PBXNativeTarget "DOFavoriteButtonNew-DEMO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FBAA71D1B4D807F00C8657F /* Debug */,
