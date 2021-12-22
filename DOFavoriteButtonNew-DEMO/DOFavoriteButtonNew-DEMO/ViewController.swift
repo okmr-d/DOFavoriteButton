@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import DOFavoriteButtonNew
 class ViewController: UIViewController {
 
     @IBOutlet var heartButton: DOFavoriteButtonNew!
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let width = (self.view.frame.width - 44) / 4
         var x = width / 2
-        let y = self.view.frame.height / 2 - 22
+        let y = 100.0
         
         // star button
         let starButton = DOFavoriteButtonNew(frame: CGRect(x: x, y: y, width: 44, height: 44), image: UIImage(named: "star"))
@@ -53,6 +53,11 @@ class ViewController: UIViewController {
         
         self.heartButton.addTarget(self, action: #selector(self.tappedButton), for: .touchUpInside)
         
+        
+        // star button
+        let bigStarButton = DOFavoriteButtonNew(frame: CGRect(x: (self.view.frame.width - 100.0) / 2.0, y: (self.view.frame.height - 100.0)/2.0 , width: 100, height: 100), image: UIImage(named: "star"))
+        bigStarButton.addTarget(self, action: #selector(self.tappedButton), for: .touchUpInside)
+        self.view.addSubview(bigStarButton)
     }
 
     override func didReceiveMemoryWarning() {
